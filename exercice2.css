@@ -1,7 +1,8 @@
 .continent{
-  background-color: rgb(255, 255, 255);
+  background-color:rgb(248, 254, 255);
   margin-top: -8px;
   width: auto;
+  box-shadow: 0 3px 15px rgba(0, 86, 123, 0.15);
 }
 
 html{
@@ -25,11 +26,15 @@ header {
 }
 
 .dimension{
-  background-color: #e1d7c473;
+  background-color: #cde6fa73;
 }
 
 .jardin{
   margin-top: 12px;
+}
+
+.cent{
+    width: 100%;
 }
 
 .cercle {
@@ -62,7 +67,7 @@ header {
 .ptlogo {
   margin-top: 2px;
   font-family: 'Times New Roman', Times, serif;
-  color: rgba(0, 0, 0, 0.600);
+  color: rgba(7, 12, 59, 0.53);
   letter-spacing: -0.5px;
 }
 
@@ -76,7 +81,7 @@ header {
 }
 
 .haut{
-  color: rgba(0, 0, 0, 0.847);
+  color: rgba(7, 12, 59, 0.847);
   text-decoration: none;
 }
 
@@ -109,9 +114,9 @@ header {
    width: 90%;
    margin: 20px auto;
    border-radius: 10px;
-   background:  linear-gradient(to bottom right, #ffffff, #fae6c2c0);
-   background-size: 100% 100%;
-   background-color: #fae6c2b6;
+   background-size: 100%;
+   background-color:rgb(249, 253, 255);
+   box-shadow: 0 2px 7px rgba(2, 52, 75, 0.15);
 }
 
 @media (max-width: 670px) {
@@ -122,14 +127,14 @@ header {
 
 .saveurs{
   height: 30px;
-  width: 240px;
+  width: 35%;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 20px;
-  background-color: #d9b97fe2;
+  background-color: #1587c925;
   font-family:  Arial, Helvetica, sans-serif;
-  color: rgba(0, 0, 0, 0.598);
+  color: rgba(7, 12, 59, 0.847);
   margin-bottom: 5px;
   margin-top: 0;
 }
@@ -146,20 +151,23 @@ header {
   width: 150px;
   border-radius: 5px;
   border: none;
-  background-color: #810121d3;
+  background: linear-gradient(to right, #0d2d7a, #2b70be);     
+  font-family: Arial, Helvetica, sans-serif;
   color: rgba(255, 255, 255, 0.792);
   font-weight: bold;
+  box-shadow: 0 6px 6px rgba(4, 55, 126, 0.15);
 }
 
 #menu{
   height: 40px;
   width: 120px;
   border-radius: 5px;
-  border: 1px solid #810121d3;
-  color: #810121d3;
+  border: 0.5px solid #dfe7fa;
+  color: rgba(7, 12, 59, 0.847);
   font-weight: bold;
-  background-color: rgba(154, 154, 154, 0);
+  background-color: white;
 }
+
 
 .Decouvrez{
   margin-top: -10px;
@@ -168,8 +176,7 @@ header {
   margin-bottom: 20px;
 }
 .experience{
-  max-height: auto;
-  height: 350px;
+  height: 450px;
   max-width: 600px;
   margin-bottom: 10px;
   margin-top: 10px;
@@ -180,16 +187,86 @@ header {
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-weight: bold;
   font-size: 10-large ;
-  color: rgba(0, 0, 0, 0.847);
+  color: rgba(7, 12, 59, 0.847);
   margin-top: 0;
+  width: 100%;
+}
+
+#pourquoivenir{
+  height: 40px;
+  width: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
+}
+
+.divimageun{
+  position: relative;
+  display: inline-block;
 }
 
 #img1{
-  height: auto;
-  max-width: 400px;
+  position: relative;
+  z-index: 2;
+  object-fit: contain;
+  height: 300px;
+  width: 100%;
   border-radius: 10px;
-  margin-bottom: 30px;
   margin-top: 30px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
+}
+
+.teteimg{
+  background-color: rgb(232, 233, 243);
+  box-shadow: 10px;
+  position: absolute;
+  z-index: 1;
+  top: 40px;
+  right:  80px;
+  height: 50px;
+  width: 60%;
+  padding-left: 10px;
+  border-radius: 19px;
+}
+
+.sousimage{
+  color: rgba(7, 12, 59, 0.847);
+  font-weight: bolder;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-bottom: 0;
+  width: 60%;
+  font-size: 10px;
+}
+
+.idees{
+  font-size: 7.8px;
+  width: 90%;
+  margin-top: 5px;
+  color: rgba(7, 12, 59, 0.847);
+  font-weight: 450;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.sept{
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 10px;
+  width: 100%;
+}
+
+.realisation{
+  height: 20px;
+}
+
+.motivation{
+  height: 40px;
+}
+
+.moderne{
+  height: 40px;
 }
 
 .petitrec{
@@ -212,7 +289,7 @@ header {
 
 .produits{
   margin-bottom: 15px;
-  color: rgba(0, 0, 0, 0.847);
+  color: rgba(7, 12, 59, 0.847);
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-weight: bold;
 }
@@ -227,10 +304,11 @@ header {
 
 .recgrid{
   max-height: 600px;
-  height: 200px;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.858);
   padding-left: 20px;
+  padding-bottom: 20px;
+  box-shadow: 0 3px 15px rgba(1, 33, 71, 0.15);
 }
 
 .recgrid2{
@@ -264,7 +342,6 @@ header {
 #roti{
   margin-top: 10px;
   margin-bottom: 0;
-  color: rgba(0, 0, 0, 0.847);
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-weight: bold;
 }
@@ -288,15 +365,24 @@ header {
   height: auto;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.858);
+  box-shadow: 0 3px 15px rgba(1, 33, 71, 0.15);
+}
+
+.bleu{
+  color: rgba(7, 12, 59, 0.847);
+}
+
+.chriffre{
+  margin-bottom: 0;
+  margin-top: 50px;
 }
 
 .carte{
-  margin: 0;
+  margin-top: 10px;
 }
 
 .quinze{
-  margin-bottom: 13px;
-  color: #810121d3;
+  background-color: #2b70be00;
 }
 
 @media (max-width: 414px) {
@@ -311,36 +397,43 @@ header {
   gap: 20px;
   width: 90%;
   margin: auto;
+  margin-bottom: 0px;
 }
 
 .quadriple{
-  height: 100px;
-  border-radius: 10px;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.858);
+  margin-top: 10px;
+  height: 70px;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-left: 10px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
+  padding-top: 20px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .grandrecdeux {
-  height: 300px;
+  height: 200px;
   margin: 40px auto ;
   background: none;
-  background-color: rgba(255, 255, 255, 0.858);
+  background: linear-gradient(to right, #0d2d7a, #2b70be);    
   display: block;
   text-align: center;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-.tri{
+.deuxboutton{
   display: flex;
-  justify-content: space-around ;
+  gap: 10px;
+  justify-content: center;
 }
 
 .que{
   margin-bottom: 15px;
+  color: rgba(255, 255, 255, 0.642);
 }
 
 .now{
@@ -352,14 +445,25 @@ header {
   width: 160px;
   border-radius: 8px;
   border: none;
-  background-color: #810121d3;
   color: rgba(255, 255, 255, 0.792);
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(to right, #0d2d7a, #2b70be);    
+}
+
+.telecharger{
+  height: 40px;
+  width: 180px;
+  background-color: rgba(255, 255, 255, 0.792);
+  border-radius: 8px;
+  border: none;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .votre{
   margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.792);
 }
 
 .senegal{
@@ -383,16 +487,6 @@ header {
   margin-top: 0;
 }
 
-.numeroun{
-  width: 180px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.sn{
-  width: 210px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 .dakar{
   width: 150px;
 }
@@ -404,29 +498,40 @@ header {
 .SQpts{
   display: flex;
   justify-content: space-between;
-  gap: 10px;
+  gap: 5spx;
   margin: auto;
   width: 160px;
+  margin-top: -10px;
+  margin-bottom: 30px;
 }
 
 .pts{
-  width: 30px;
-  height: 30px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
+}
+
+.cercledeux{
+  background-color: #1d4bb867;
 }
 
 .bas{
   height: 50px;
   border-radius: 5px;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
   background: none;
-  background-color: rgba(255, 255, 255, 0.858);
-
+  background-color: rgba(255, 255, 255, 0.897);
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
 }
 
 .deuxmille{
   padding-left: 20px;
+  color: #0d2e7a76;
+  display: flex;
+  align-items: center;
+  margin: 0;
 }
 
 .tous{
