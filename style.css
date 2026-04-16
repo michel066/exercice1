@@ -39,8 +39,8 @@ header {
                   display: flex;
                   justify-content: center;
                   align-items: center;
-                  background: linear-gradient(to right, #0d2d7a, #2b70be);                  font-family: Arial, Helvetica, sans-serif;
-                  color: rgb(255, 255, 255);
+                  background:  linear-gradient(to bottom right, #ffffffb6, #d5c3a1c0);
+                  color: rgba(0, 0, 0, 0.849);
                   font-weight: bold;
 }
 
