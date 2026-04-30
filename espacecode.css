@@ -1,128 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(135deg, rgb(234, 199, 177), rgb(219, 127, 74));
+    height: 800px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 .contentformulaire{
-    border: 2px solid black;
-    max-width: 500px;
-    min-height: 500px;
+    width: 30%;
+    margin: 0 auto;
+    height: 620px;
+    margin-top: 20px;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+}
+
+.longtrait{
+    border: 2px solid rgb(191, 74, 7);
+    width: 80%;
     margin: auto;
-    padding: 10px;
-}
-.titre{
-    font-size: 25px;
-    font-weight: 600px;
-}
-.texte{
-    font-size: 14px;
 }
 
-.aaa{
+.espace{
     display: flex;
-    justify-content: space-around;
+    margin: auto;
+    margin-top: 35px;
+    width: 80%;
 }
 
-.aaa div input{
-    width: 100%;
+.titre{
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(191, 74, 7);
+}
+
+.texte{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    font-size: 1.5rem;
+}
+
+.connecter{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    width: 80%;
+    margin: auto;
     margin-top: 5px;
-    height: 25px;
-}
-.email{
-    width: 95%;
-    margin: 15px auto;
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.573);
 }
 
-.email input {
-     width: 100%;
-    margin-top: 5px;
-    height: 25px;
+.email {
+    display: flex;
+    flex-direction: column; /* Aligne les éléments verticalement */
+    gap: 5px;            /* Ajoute un petit espace entre le label et l'input */
+    width: 80%;
+    margin: auto;
+    margin-top: 25px;
+
 }
 
-
-.selection{
-    width: 95%;
-    margin: 15px auto;
+.adresmail{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(0, 0, 0, 0.573);
+    font-size: 0.9rem;
+    font-weight: bold;
 }
 
-.selection select {
-     width: 100%;
-    margin-top: 5px;
-    height: 25px;
+.mailtexte{
+    height: 40px;
+    border-radius: 10px;
+    border: 1.5px solid rgba(131, 92, 14, 0.094);
+    background-color: rgba(131, 92, 14, 0.094);
+    padding: 10px;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
 }
 
 .mdp{
-    width: 95%;
-    margin: 15px auto;
+    display: flex;
+    flex-direction: column; /* Aligne les éléments verticalement */
+    gap: 5px;            /* Ajoute un petit espace entre le label et l'input */
+    width: 80%;
+    margin: auto;
+    margin-top: 15px;
 }
 
-.mdp input {
-     width: 100%;
-    margin-top: 5px;
-    height: 25px;
+.forgot-link{
+    text-decoration: none;
+    text-align: end;
+    color: rgb(191, 74, 7);
+    font-weight: bold;
+    font-size: 0.8rem;
 }
 
-.Btn{
-    width: 95%;
-    margin: 20px auto;
+.remember-me{
+    width: 80%;
+    margin: auto;
+    margin-top: 15px;
+    display: flex;
+    gap: 8px;
+}
+
+.souvien{
+    font-size: 0.8rem;
+    color: rgba(0, 0, 0, 0.573);
+    font-weight: bold;
+}
+
+.vrai {
+  accent-color: rgb(232, 88, 5);
+}
+
+.seconnecter{
+    border: none;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 15px;
+    height: 40px;
+    color: #ffffff;
+    width: 80%;
+}
+
+.se{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(232, 88, 5);
+    border: none;
+    border-radius: 10px;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+}
+
+.divsection {
+  display: flex;      
+  align-items: center; 
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.selectionn {
+  flex: 1;             /* Force les barres à s'étirer pour prendre tout l'espace */
+  height: 2px;         /* Épaisseur de la ligne (très fine comme sur ton image) */
+  background-color: #e0e0e0; /* Couleur grise claire pour la ligne */
 }
 
 .Btn1{
-    width: 95%;
-    margin: 20px auto;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
 }
 
-.Btn button{
+.secondary{
     width: 100%;
-    padding: 8px;
-    background-color: blue;
-    color: white;
-    font-size: 15px;
-    border: 2px solid rgb(129, 128, 128);
-    border-radius: 8px;
-    box-shadow: 0 3px 3px darkblue;
+    height: 40px;
+    border-radius: 10px;
+    border: 2px solid #e0e0e0;
+    background-color: #ffffff00;
+}
+
+.secondary{
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    cursor: pointer;
 }
 
 .zzz{
-    text-align: center;
-}
-
-.Btn1 button{
-     width: 100%;
-    padding: 8px;
-    background-color: white;
-    color: black;
-    font-size: 15px;
-    border: 2px solid rgb(129, 128, 128);
-    border-radius: 8px;
-    box-shadow: 0 3px 3px darkblue;
-}
-
-
-table{
-    width: 50%;
-    text-align: center;
-}
-
-th {
-    border: 2px solid black;
-    background-color: darkblue;
-    color: white;
-}
-
-td{
-    border: 2px solid red;
-    padding: 15px;
-}
-
-.pagination{
-    width: 50%;
-    border: 2px solid blue;
+    width: 80%;
+    margin: auto;
     display: flex;
-    justify-content: space-between; 
-    padding: 10px;
+    justify-content: center;
     align-items: center;
-
-    margin-top: 10px;
+    margin-top: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.8rem;
 }
 
-.page{
-    width: 30%;
-    background-color: black;
-    height: 20px;
+.compte{
+    text-decoration: none;
+    color: rgb(191, 74, 7);
+    margin-left: 5px;
 }
